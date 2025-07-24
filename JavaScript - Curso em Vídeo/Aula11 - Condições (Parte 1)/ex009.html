@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            background-color: rgb(238, 233, 226);
+        }
+        h1{
+            font: normal 25pt Arial;
+            font-weight: bold;
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+        form, label{
+            font: normal 15pt Arial;
+            font-weight: bold;
+        }
+        form, input{
+            border-radius: 2px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual é a sua nacionalidade?</h1>
+    <form action="">
+        <label for="">Nacionalidade</label><br>
+        <input type="text" id="txtnacionalidade" name="txtnacionalidade"><br>
+        <input type="button" value="Enviar" id="enviar" onclick="clicar()">
+    </form>
+    <div id="res">
+
+    </div>
+
+    <script>
+        let enviar = document.getElementById('enviar')
+        let nac = document.getElementById('txtnacionalidade')
+        let res = document.querySelector('div#res')
+        
+        function clicar(){
+            if(nac.value.toLowerCase() == 'brasil'){
+                res.innerHTML = `Você vive no(a) ${nac.value}`
+                res.innerHTML += '<br>Você é <strong>brasileiro(a)!</strong>'
+            } else{
+                res.innerHTML = `Você vive no ${nac.value}`
+                res.innerHTML += '<br>Você é <strong>estrangeiro!</strong>'
+            }
+        }
+    </script>
+</body>
+</html>
