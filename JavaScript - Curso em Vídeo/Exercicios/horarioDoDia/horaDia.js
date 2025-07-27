@@ -19,7 +19,6 @@ function carregar(){
         msg.innerHTML += '<br><strong>Boa noite!</strong>'
         document.body.style.background = 'linear-gradient(180deg, #3F2B96 0%, #809ce2ff 100%) no-repeat fixed'
         img.src = 'imgs/foto-noite.jpg'
-
     }
 }
 
