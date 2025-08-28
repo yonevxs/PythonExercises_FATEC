@@ -2,6 +2,8 @@ import random
  
 #lista_sorteados = random.sample(range(1, 60), 6)
 #print(lista_sorteados)
+
+# Teste para uma lista já definida, apenas descomente a linha 3 para poder gerar uma lista aleatória!!!
 lista_sorteados = [1, 4, 3, 5, 60, 43]
 lista = []
 print("Digite '0' para sair")
@@ -35,4 +37,5 @@ if acertos >= 1:
         print("Você acertou uma SENA! Parabéns, você ganhou!")
 else:
     print("Poxa, nenhum acerto! Tente novamente.")
+
 
